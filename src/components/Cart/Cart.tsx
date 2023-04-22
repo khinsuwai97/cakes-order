@@ -6,7 +6,12 @@ import EmptyCart from './EmptyCart';
 import CheckoutForm from './CheckoutForm';
 import { useAppDispatch, useAppSelector } from '../../types/types';
 import Modal from '../Modal';
-import { clearCart, useOrderCartItemsMutation, closeForm } from '../../store';
+import {
+  clearCart,
+  useOrderCartItemsMutation,
+  closeForm,
+  clearFormData,
+} from '../../store';
 
 import { ShoppingButton } from '../Button';
 
@@ -33,6 +38,7 @@ const Cart = () => {
     addCartData(cartData);
     dispatch(closeForm());
     dispatch(clearCart());
+    dispatch(clearFormData());
   };
 
   if (results.isLoading) {
