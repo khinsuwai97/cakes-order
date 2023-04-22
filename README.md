@@ -23,3 +23,4 @@
 - Firebase Realtime database (to save order data (cakes information and user data))
 - local storage (for cart page)
 - Rapid API (for cakes data)
+** I made this project to try Redux Toolkit and RTK Query with Typescript.
