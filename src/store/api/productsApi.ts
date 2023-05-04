@@ -12,7 +12,10 @@ const productsApi = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl: 'https://the-birthday-cake-db.p.rapidapi.com/',
     prepareHeaders(headers) {
-      headers.set('X-RapidAPI-Key', import.meta.env.VITE_API_KEY);
+      headers.set(
+        'X-RapidAPI-Key',
+        '97717bf118mshe00787ee5f3e504p1b071fjsn688f9f005c65'
+      );
       headers.set('X-RapidAPI-Host', 'the-birthday-cake-db.p.rapidapi.com');
       return headers;
     },
